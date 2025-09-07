@@ -60,6 +60,7 @@ CREATE TABLE asistencia(
   id_asistencia SERIAL PRIMARY KEY,
   id_inscripcion INTEGER NOT NULL,
   fecha_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  asistio BOOLEAN NOT NULL,
   FOREIGN KEY (id_inscripcion) REFERENCES inscripcion(id_inscripcion)
     ON DELETE CASCADE
     ON UPDATE CASCADE
