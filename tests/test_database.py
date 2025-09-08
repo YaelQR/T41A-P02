@@ -48,7 +48,7 @@ def test_structure(db_connection):
             SELECT tablename FROM pg_tables 
             WHERE tablename 
             IN ('alumno', 'maestro', 'grupo',
-            'inscripcion', 'asistencia','carrera','materia',);
+            'inscripcion', 'asistencia','carrera','materia');
           '''
     expected_tables = {'alumno', 'maestro',
                        'grupo', 'inscripcion',
